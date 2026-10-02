@@ -1,25 +1,25 @@
 class Phpm < Formula
   desc "An extremely fast, Composer-compatible PHP installer"
   homepage "https://speedsharmaai.github.io/phpm/"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.0/phpm-aarch64-apple-darwin.tar.xz"
-      sha256 "6e493d3f7ad22933b462d25094a851c65adecf4e2d2dde5751ad78fe70742a06"
+      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.1/phpm-aarch64-apple-darwin.tar.xz"
+      sha256 "2e87ce302130de959a9af83dea305c16789023da2cfe959472d039ff7d33fd01"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.0/phpm-x86_64-apple-darwin.tar.xz"
-      sha256 "030ad651496a572160e02351cb33ba4d53ee9eaada2ad64d24e2e88ccf42e163"
+      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.1/phpm-x86_64-apple-darwin.tar.xz"
+      sha256 "0ac67db52327fa29131037a18fa7a1deefee31ad3df5d54303bf38c63588179e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.0/phpm-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "c4678ed8e98955a09bc39331fde37c56243a3477c58cd2ee16bca8a7fc343cd3"
+      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.1/phpm-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "dd3757c7655c8d2bb1d3c2e30e3936ada628c2945524e6a24fd26d19541632f5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.0/phpm-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "c524ee15b88e7c3caecfb6bc5f3bf4ed61b4ae736832d484ccb8e1badb1cb2cf"
+      url "https://github.com/speedsharmaai/phpm/releases/download/v0.1.1/phpm-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "c530ba6cd92cc486a69ccf874cb4d1156c9228707fa364d1b3739ae8c2214797"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
