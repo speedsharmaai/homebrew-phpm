@@ -7,12 +7,10 @@ Composer-compatible PHP installer written in Rust.
 brew install speedsharmaai/phpm/phpm
 ```
 
-or
-
-```sh
-brew tap speedsharmaai/phpm
-brew install phpm
-```
+Use the full name. Homebrew 7 refuses formulae from taps you haven't
+trusted, and installing by full name is what trusts this one. After a plain
+`brew tap speedsharmaai/phpm`, `brew install phpm` stops with "untrusted
+tap" until you run `brew trust speedsharmaai/phpm`.
 
 macOS (arm64, x86_64) and Linux (arm64, x86_64). Windows isn't supported
 yet.
